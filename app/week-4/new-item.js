@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 function NewItem(){
-  const [counterNum, setCounterNum] = useState(0);
+  const [counterNum, setCounterNum] = useState(1  );
 
   function increaseCounter() {
     setCounterNum(counterNum + 1);
