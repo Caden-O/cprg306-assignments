@@ -46,14 +46,14 @@ function NewItem(){
     console.log("run!!!");
 
     var item1 = new Object();
-    item1.name = {name};
-    item1.quantity = {counterNum};
-    item1.category = {category};
+    item1.name = name;
+    item1.quantity = counterNum;
+    item1.category = category;
 
     console.log(name, counterNum, category);
-    console.log(item1.name.name, item1.quantity.counterNum, item1.category.category);
+    console.log(item1.name, item1.quantity, item1.category);
     
-    alert(item1);
+    alert(`Item: ${item1.name}\nQuantity: ${item1.quantity}\nCategory: ${item1.category}`);
   }
   return(
     <form 
@@ -106,6 +106,7 @@ function NewItem(){
         >
           decriment
         </button>
+        <p className="m-2 text-xs text-gray-400">( Range: 1 - 20 )</p>
       </div>
       <div className="w-full p-2 text-xl">
         <label htmlFor="category" className="font-semibold">Category:</label>
