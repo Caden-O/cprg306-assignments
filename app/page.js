@@ -107,11 +107,26 @@ import Link from "next/link";
 export default function Home(){
   return (
     <main>
-      <h1>CPRG 306: Web Development 2 - Assignments</h1>
-      <Link href="/week-2">Go to Week 2 ➡️</Link>
-      <Link href="/week-3">Go to Week 3 ➡️</Link>
-      <Link href="/week-4">Go to Week 4 ➡️</Link>
-      <Link href="/week-5">Go to Week 5 ➡️</Link>
+      <h1 className="font-bold text-4xl m-10">CPRG 306: Web Development 2 - Assignments</h1>
+      <div>
+        <ul>
+          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+            <Link href="/week-2">Go to Week 2 ➡️</Link>
+          </li>
+          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+            <Link href="/week-3">Go to Week 3 ➡️</Link>
+          </li>
+          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+            <Link href="/week-4">Go to Week 4 ➡️</Link>
+          </li>
+          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+            <Link href="/week-5">Go to Week 5 ➡️</Link>
+          </li>
+          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+            <Link href="/week-6">Go to Week 6 ➡️</Link>
+          </li>
+        </ul>
+      </div>
     </main>
   )
 }
