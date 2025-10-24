@@ -40,6 +40,8 @@ export default function NewItem({ onAddItem }){
     setName("")
     setCounterNum(1)
     setCategory("produce")
+    setIncStatus(false)
+    setDecStatus(true)
   }
 
   // function handleSubmit(event){
