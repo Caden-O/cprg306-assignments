@@ -8,7 +8,12 @@ import { useState } from "react";
 function ItemList(){
   const [sortBy, setSortBy] = useState("name");
 
-  const [items, setItems] = useState(itemsJson);
+  const [items, setItems] = useState(itemsJson.sort((a, b) => {
+        if (a.name < b.name) return -1;
+        if (a.name > b.name) return 1;
+        return 0;
+    })
+  )
 
   function updateSort(event){
 

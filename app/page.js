@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-import Link from "next/link";
+// import Link from "next/link";
 
 // export default function Home() {
 //   return (
@@ -104,13 +104,15 @@ import Link from "next/link";
 //   );
 // }
 
+import Week from "./week(home)";
+
 export default function Home(){
   return (
     <main>
       <h1 className="font-bold text-4xl m-10">CPRG 306: Web Development 2 - Assignments</h1>
       <div>
-        <ul>
-          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+        <ul className="max-w-3xl mx-auto text-center">
+          {/* <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
             <Link href="/week-2">Go to Week 2 ➡️</Link>
           </li>
           <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
@@ -125,6 +127,15 @@ export default function Home(){
           <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
             <Link href="/week-6">Go to Week 6 ➡️</Link>
           </li>
+          <li className="outline outline-white m-5 p-5 rounded-2xl bg-gray-900 text-xl text-blue-400  hover:outline-2 hover:font-bold ">
+            <Link href="/week-7">Go to Week 7 ➡️</Link>
+          </li> */}
+          <Week weekNum={"2"}/>
+          <Week weekNum={"3"}/>
+          <Week weekNum={"4"}/>
+          <Week weekNum={"5"}/>
+          <Week weekNum={"6"}/>
+          <Week weekNum={"7"}/>
         </ul>
       </div>
     </main>

@@ -1,4 +1,5 @@
 "use client";
+import Header from "../header/header"
 import { useState } from "react";
 import NewItem from "./new-item";
 
@@ -9,6 +10,7 @@ export default function Page() {
   // }
   return (
     <main>
+      <Header />
       <NewItem></NewItem>
     </main>
   );
