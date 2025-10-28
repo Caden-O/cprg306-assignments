@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function Page() {
   const [newItems, setNewItems] = useState([...itemsData]);
-  const [selectedIngredient, setSelectedIngredient] = useState("chicken");
+  const [selectedIngredient, setSelectedIngredient] = useState("");
 
     function handleAddItem(item){
       console.log(newItems.length);
