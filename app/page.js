@@ -136,6 +136,7 @@ export default function Home(){
           <Week weekNum={"5"}/>
           <Week weekNum={"6"}/>
           <Week weekNum={"7"}/>
+          <Week weekNum={"8"}/>
         </ul>
       </div>
     </main>

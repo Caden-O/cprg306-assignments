@@ -2,6 +2,12 @@ import { Icon } from "@iconify/react";
 import Week from "./week(header)"
 
 function Header(){
+  // function weeks(){
+  //   for(let i = 0; i < 8; i++){
+  //     <Week weekNum={i} />
+  //     console.log("a!");
+  //   }
+  // }
   return(
     <header>
       <div className="h-full flex bg-neutral-900 mb-3">
@@ -39,6 +45,8 @@ function Header(){
         <Week weekNum={5} />
         <Week weekNum={6} />
         <Week weekNum={7} />
+        <Week weekNum={8} />
+        {/* {() => weeks()} */}
       </div>
     </header>
   )
