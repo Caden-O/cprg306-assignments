@@ -104,7 +104,7 @@
 //   );
 // }
 
-import Week from "./week(home)";
+import Week from "./utilities/week(home)";
 
 export default function Home(){
   return (
@@ -137,6 +137,7 @@ export default function Home(){
           <Week weekNum={"6"}/>
           <Week weekNum={"7"}/>
           <Week weekNum={"8"}/>
+          <Week weekNum={"9"}/>
         </ul>
       </div>
     </main>

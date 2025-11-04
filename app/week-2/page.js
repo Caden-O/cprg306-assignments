@@ -1,4 +1,4 @@
-import Header from "../header/header"
+import Header from "../utilities/header"
 import StudentInfo from "./student-info";
 
 export default function Page() {
