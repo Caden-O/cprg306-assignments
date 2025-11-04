@@ -1,5 +1,5 @@
 "use client";
-import Header from ".../utilities/header"
+// import Header from ".../"
 import ItemList from "./item-list"
 import NewItem from "./new-item";
 import itemsData from "./items.json"
@@ -44,7 +44,7 @@ export default function Page() {
   }else{
     return (
       <main>
-        <Header />
+        {/* <Header /> */}
         <div className="h-full flex justify-center items-center">
           <div className="max-w-xl justify-self-end">
             <h1 className="text-4xl p-5 font-bold">Shopping List</h1>
