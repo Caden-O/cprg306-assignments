@@ -38,13 +38,16 @@ export default function Page() {
   if(user == null){
     return(
       <main>
-        <p>This page can only be accessed if you are signed in!</p>
+        <Header week={9}/>
+        <section>
+          <p>This page can only be accessed if you are signed in!</p>
+        </section>
       </main>
     )
   }else{
     return (
       <main>
-        <Header />
+        <Header week={9}/>
         <div className="h-full flex justify-center items-center">
           <div className="max-w-xl justify-self-end">
             <h1 className="text-4xl p-5 font-bold">Shopping List</h1>
