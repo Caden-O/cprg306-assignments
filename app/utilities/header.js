@@ -1,13 +1,16 @@
 import { Icon } from "@iconify/react";
 import Week from "./week(header)"
 
-function Header(){
-  // function weeks(){
-  //   for(let i = 0; i < 8; i++){
-  //     <Week weekNum={i} />
-  //     console.log("a!");
+function Header({ week }){
+  // function renderWeeks(){
+  //   for(let i=0;i<9;i++){
+  //     return(
+  //       <Week weekNum={i} />
+  //     )
   //   }
   // }
+  const weeks = [2,3,4,5,6,7,8,9]
+  
   return(
     <header>
       <div className="h-full flex bg-neutral-900 mb-3">
@@ -39,6 +42,7 @@ function Header(){
             "m-2 p-2 px-4 bg-neutral-700 rounded hover:text-blue-400 hover:cursor-pointer hover:underline">
           week 7
         </a> */}
+        {/* 
         <Week weekNum={2} />
         <Week weekNum={3} />
         <Week weekNum={4} />
@@ -46,7 +50,21 @@ function Header(){
         <Week weekNum={6} />
         <Week weekNum={7} />
         <Week weekNum={8} />
-        {/* {() => weeks()} */}
+        <Week weekNum={9} /> 
+        */}
+        {/* {() => renderWeeks} */}
+        {
+          weeks.map((weekArrayNum) => { 
+            // return (
+          //   <Week weekNum={weekArrayNum} disabledStatus={false} key={weekArrayNum} />
+          // )
+            if(weekArrayNum !== week){
+              return (<Week weekNum={weekArrayNum} disabledStatus={false} key={weekArrayNum}/>)
+            }else{
+              return (<Week weekNum={weekArrayNum} disabledStatus={true} key={weekArrayNum}/>)
+            }
+          })
+        }
       </div>
     </header>
   )

@@ -6,7 +6,7 @@ import Item from "./item"
 export default function Page() {
   return (
     <main>
-      <Header />
+      <Header week={6}/>
       <section className="max-w-xl mx-auto">
         <h1 className="text-4xl p-5 font-bold">Shopping List</h1>
         <ItemList />

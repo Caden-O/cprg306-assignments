@@ -1,5 +1,5 @@
 "use client";
-// import Header from ".../"
+import Header from "@/app/utilities/header";
 import ItemList from "./item-list"
 import NewItem from "./new-item";
 import itemsData from "./items.json"
@@ -7,9 +7,9 @@ import MealIdeas from "./meal-ideas";
 import { useState } from "react";
 import { useUserAuth } from "../_utils/auth-context";
 
-const { user } = useUserAuth();
 
 export default function Page() {
+  const { user } = useUserAuth();
   const [newItems, setNewItems] = useState([...itemsData]);
   const [selectedIngredient, setSelectedIngredient] = useState("");
 
@@ -44,7 +44,7 @@ export default function Page() {
   }else{
     return (
       <main>
-        {/* <Header /> */}
+        <Header />
         <div className="h-full flex justify-center items-center">
           <div className="max-w-xl justify-self-end">
             <h1 className="text-4xl p-5 font-bold">Shopping List</h1>

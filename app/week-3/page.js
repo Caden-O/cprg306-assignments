@@ -5,7 +5,7 @@ import Item from "./item"
 export default function Page() {
   return (
     <main>
-      <Header />
+      <Header week={3}/>
       <h1>Shopping List</h1>
       <ItemList />
     </main>

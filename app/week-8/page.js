@@ -35,7 +35,7 @@ export default function Page() {
     
   return (
     <main>
-      <Header />
+      <Header week={8}/>
       <div className="h-full flex justify-center items-center">
         <div className="max-w-xl justify-self-end">
           <h1 className="text-4xl p-5 font-bold">Shopping List</h1>

@@ -32,7 +32,7 @@ export default function Page() {
     
   return (
     <main>
-      <Header />
+      <Header week={7}/>
       <section className="max-w-xl mx-auto">
         <h1 className="text-4xl p-5 font-bold">Shopping List</h1>
         <NewItem onAddItem={handleAddItem}/>

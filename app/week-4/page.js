@@ -10,7 +10,7 @@ export default function Page() {
   // }
   return (
     <main>
-      <Header />
+      <Header week={4}/>
       <NewItem></NewItem>
     </main>
   );
